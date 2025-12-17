@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Digits</title>
+</head>
+
+<body>
+
+    <script>
+        var number = 12345;
+        var count = 0;
+
+        while (number > 0) {
+            number = Math.floor(number / 10);
+            count++;
+        }
+
+        document.write("Total digits = " + count);
+    </script>
+
+</body>
+
+</html>

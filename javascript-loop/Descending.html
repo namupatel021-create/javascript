@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESCENDING NUMBER </title>
+</head>
+
+<body>
+    <input type="text" placeholder="end Number" id="end">
+    <input type="text" placeholder="start Number" id="start">
+
+    <button onclick="printNumber()"> print </button>
+
+    <div id="output"> </div>
+
+    <script>
+        function printNumber() {
+
+
+            let end = document.getElementById('end').value;
+            let start = document.getElementById('start').value;
+
+            end = Number(end)
+            start = Number(start)
+
+            for (var i = end; i >= start; i--) {
+
+
+
+
+                if (i >= 1) {
+                    document.getElementById('output').innerHTML += i + "<br>";
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

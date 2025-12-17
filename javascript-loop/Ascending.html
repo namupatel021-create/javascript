@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCENDING NUMBER </title>
+</head>
+
+<body>
+    <input type="text" placeholder="start Number" id="start">
+    <input type="text" placeholder="end Number" id="end">
+
+    <button onclick="printNumber()"> print </button>
+
+    <div id="output"></div>
+
+    <script>
+        function printNumber() {
+
+            let start = document.getElementById('start').value;
+            let end = document.getElementById('end').value;
+
+            start = Number(start)
+            end = Number(end)
+
+            for (var i = start; i <= end; i++) {
+                if (i <= 10) {
+                    document.getElementById('output').innerHTML += i + "<br>";
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
